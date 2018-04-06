@@ -6,4 +6,7 @@ b1 = (4000-1000)*rand + 1000;
 m1 = 466.5;
 s = tf('s');
 G2 = (-m1*b2*s^3-m1*k2*s^2)/((m1*s^2+b1*s+k1)*(m2*s^2+(b1+b2)*s+(k1+k2))-(b1*s+k1)*(b1*s+k1));
+subplot(2,1,1);
 step(G2);
+subplot(2,1,2);
+impulse(G2);
